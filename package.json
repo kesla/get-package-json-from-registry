@@ -1,6 +1,6 @@
 {
   "name": "get-package-json-from-registry",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Get package.json from registry, cached",
   "main": "dist/index",
   "bin": {
