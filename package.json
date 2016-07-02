@@ -1,0 +1,37 @@
+{
+  "name": "get-package-json-from-registry",
+  "version": "0.0.0",
+  "description": "Get package.json from registry, cached",
+  "main": "dist/index",
+  "bin": {
+    "get-package-json-from-registry": "bin/cli.js"
+  },
+  "scripts": {
+    "test": "semistandard | snazzy",
+    "build": "rm -rf dist && mkdir -p dist && babel lib --out-dir dist",
+    "watch": "rm -rf dist && mkdir -p dist && babel -w lib --out-dir dist",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kesla/get-package-json.git"
+  },
+  "author": "David Björklund@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kesla/get-package-json/issues"
+  },
+  "homepage": "https://github.com/kesla/get-package-json#readme",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.10.4",
+    "babel-preset-es2015": "^6.9.0",
+    "semistandard": "^8.0.0",
+    "snazzy": "^4.0.0"
+  },
+  "dependencies": {
+    "async-cache-promise": "^2.0.1",
+    "get-npm-registry-package": "^1.0.1",
+    "resolve-npm-version": "^1.0.0"
+  }
+}
