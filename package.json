@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kesla/get-package-json.git"
+    "url": "git+https://github.com/kesla/get-package-json-from-registry.git"
   },
   "author": "David Björklund@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kesla/get-package-json/issues"
+    "url": "https://github.com/kesla/get-package-json-from-registry/issues"
   },
-  "homepage": "https://github.com/kesla/get-package-json#readme",
+  "homepage": "https://github.com/kesla/get-package-json-from-registry#readme",
   "devDependencies": {
     "babel-cli": "^6.10.1",
     "babel-core": "^6.10.4",
