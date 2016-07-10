@@ -7,7 +7,7 @@
     "get-package-json-from-registry": "bin/cli.js"
   },
   "scripts": {
-    "test": "semistandard | snazzy",
+    "test": "node bin/cli npm && semistandard | snazzy",
     "build": "rm -rf dist && mkdir -p dist && babel lib --out-dir dist",
     "watch": "rm -rf dist && mkdir -p dist && babel -w lib --out-dir dist",
     "prepublish": "npm run build"
