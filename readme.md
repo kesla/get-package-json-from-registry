@@ -9,14 +9,18 @@ npm install [--save] get-package-json-from-registry
 ```
 
 ```js
-import setupGetPackageJson from 'get-package-json-from-registry';
-
-// calls will be cached in this instance
-const getPackageJson = setupGetPackgeJson();
+import getPackageJson from 'get-package-json-from-registry';
 
 // these 2 will result in one query to the registry since we have a cache
 getPackageJson('snappy@2').then(json => console.log(json));
 getPackageJson('snappy@~1.1.0').then(json => console.log(json));
+
+// calls will be cached in this instance
+const getPackageJsonCached = getPackageJson.cached();
+
+// these 2 will result in one query to the registry since we have a cache
+getPackageJsonCached('snappy@2').then(json => console.log(json));
+getPackageJsonCached('snappy@~1.1.0').then(json => console.log(json));
 ```
 
 ## cli
