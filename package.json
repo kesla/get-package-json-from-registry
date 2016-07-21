@@ -32,7 +32,7 @@
     "tapava": "^2.2.0"
   },
   "dependencies": {
-    "async-cache-promise": "^2.0.1",
+    "fast-cache": "^1.1.0",
     "get-npm-registry-package": "^1.0.1",
     "immutable-object-methods": "^1.2.1",
     "resolve-npm-version": "^1.0.0"
